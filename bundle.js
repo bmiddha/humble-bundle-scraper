@@ -13,7 +13,7 @@ downloadHolders.forEach((downloadHolder) => {
     let downloadPlatform = downloadHolder.querySelector(".dlplatform").innerText;
     let platformDownloads = {
         "type": downloadPlatform,
-        "downloads": []
+        "list": []
     };
     rows.forEach((row) => {
         let title = row.querySelector(".gameinfo>.title>a").innerText;
@@ -29,7 +29,7 @@ downloadHolders.forEach((downloadHolder) => {
                 "url": url
             });
         });
-        platformDownloads.downloads.push({
+        platformDownloads.list.push({
             "title": title,
             "subtitle": subtitle,
             "imageUrl": imageUrl,
