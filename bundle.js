@@ -1,4 +1,4 @@
-let title = document.querySelector("#headertext>div").innerText.substring(26).trim();
+let title = document.querySelector("#hibtext").innerText.split("THANKS FOR PURCHASING\n").pop().trim();
 let key = window.location.search.substring("key").split("=")[1].substring(1);
 let bundle = {
     "title": title,
